@@ -1,6 +1,18 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+section:first-of-type { /* Seleciona a primeira section */
+    display: flex;        /* Usa flexbox para o layout */
+    align-items: center;   /* Alinha os itens verticalmente ao centro */
+  }
+  
+  section:first-of-type > * { /* Seleciona todos os elementos filhos diretos da primeira section */
+    margin-right: 10px;    /* Adiciona um espaçamento à direita de cada elemento */
+  }
+  
+  section:first-of-type > *:last-child { /* Seleciona o último elemento filho direto da primeira section */
+    margin-right: 0;        /* Remove a margem direita do último elemento */
+  }
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
@@ -174,7 +186,6 @@ footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
-
 /* Estilos gerais para a seção de resultados */
 .resultados-pesquisa {
     overflow-y: auto; /* Habilita a barra de rolagem vertical quando necessário */
@@ -193,8 +204,4 @@ footer {
   .resultados-pesquisa::-webkit-scrollbar-thumb {
     background: #888; /* Cor do controle deslizante (thumb) da barra de rolagem */
     border-radius: 4px; /* Borda arredondada para o controle deslizante */
-  }
-  
-  .resultados-pesquisa::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor do controle deslizante quando o mouse passa por cima */
   }
