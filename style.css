@@ -176,42 +176,25 @@ footer {
 }
 
 /* Estilos gerais para a seção de resultados */
-/* Estilos gerais para a seção de resultados */
 .resultados-pesquisa {
-    overflow-y: auto; 
-    max-height: 300px; 
+    overflow-y: auto; /* Habilita a barra de rolagem vertical quando necessário */
+    max-height: 300px; /* Define uma altura máxima para a seção, para que a barra de rolagem apareça */
   }
   
   /* Estilos da barra de rolagem (WebKit) */
   .resultados-pesquisa::-webkit-scrollbar {
-    width: 8px; 
+    width: 8px; /* Largura da barra de rolagem */
   }
   
   .resultados-pesquisa::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1; /* Cor de fundo da trilha da barra de rolagem */
   }
   
   .resultados-pesquisa::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 4px; 
-  
-    /* Adiciona brilho e reflexo (WebKit) */
-    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5); 
+    background: #888; /* Cor do controle deslizante (thumb) da barra de rolagem */
+    border-radius: 4px; /* Borda arredondada para o controle deslizante */
   }
   
   .resultados-pesquisa::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-    
-    /* Aumenta o brilho ao passar o mouse (WebKit) */
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8); 
-  }
-  
-  /* Estilos da barra de rolagem (Firefox) */
-  .resultados-pesquisa {
-    scrollbar-width: thin; /* Define a largura da barra de rolagem */
-    scrollbar-color: #888 #f1f1f1; /* Cor do controle deslizante e da trilha */
-  }
-  
-  .resultados-pesquisa:hover {
-    scrollbar-color: #555 #f1f1f1; /* Cor do controle deslizante ao passar o mouse */
+    background: #555; /* Cor do controle deslizante quando o mouse passa por cima */
   }
